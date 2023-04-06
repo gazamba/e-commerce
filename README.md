@@ -1,2 +1,2 @@
 # e-commerce
-e-commerce for learning purposes
+e-commerce built with Spring boot to validate it's capabilities
