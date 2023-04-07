@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name = "REVIEW")
-@Table (name = "REVIEW")
+@Entity (name = "review")
+@Table (name = "review")
 public class Review {
 
     // getters and setters by Lombook

@@ -5,8 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 
-@Entity (name = "USER")
-@Table (name = "USER")
+@Entity (name = "user")
+@Table (name = "user")
 public class User {
 
     // getters and setters by Lombook
@@ -17,19 +17,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "USERNAME")
+    @Column(name = "username")
     private String username;
 
-    @Column(name = "EMAIL")
+    @Column(name = "email")
     private String email;
 
-    @Column(name = "PASSWORD")
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "ADDRESS")
+    @Column(name = "address")
     private String address;
 
-    @Column(name = "PAYMENT_INFO")
+    @Column(name = "payment_info")
     private String paymentInfo;
 
 

@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name = "PAYMENT_METHOD")
-@Table (name = "PAYMENT_METHOD")
+@Entity (name = "payment_method")
+@Table (name = "payment_method")
 public class PaymentMethod {
 
     // getters and setters by Lombook
@@ -16,7 +16,7 @@ public class PaymentMethod {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
 

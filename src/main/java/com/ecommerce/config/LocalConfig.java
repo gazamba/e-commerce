@@ -12,29 +12,25 @@ import javax.sql.DataSource;
 @Configuration
 public class LocalConfig {
 
-    @Value("${database.driver}")
-    private String driver;
-
-    @Value("${database.url}")
+    @Value("${datasource.url}")
     private String url;
-
-    @Value("${database.user}")
-    private String userName;
-
-    @Value("${database.password}")
+    @Value("${datasource.username}")
+    private String username;
+    @Value("${datasource.password}")
     private String password;
+    @Value("${datasource.driver}")
+    private String driver;
 
     @Bean
     public DataSource getDataSource() {
         DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
 
-        dataSourceBuilder.driverClassName(driver);
         dataSourceBuilder.url(url);
-        dataSourceBuilder.username(userName);
+        dataSourceBuilder.username(username);
         dataSourceBuilder.password(password);
+        dataSourceBuilder.driverClassName(driver);
 
         return dataSourceBuilder.build();
     }
-
 
 }

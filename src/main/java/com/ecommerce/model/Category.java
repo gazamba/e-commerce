@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name="CATEGORY")
-@Table (name="CATEGORY")
+@Entity (name = "category")
+@Table (name = "category")
 public class Category {
 
     @Getter
@@ -15,10 +15,10 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column (name="NAME")
+    @Column (name = "name")
     private String name;
 
-    @Column (name="DESCRIPTION")
+    @Column (name = "description")
     private String description;
 
 }

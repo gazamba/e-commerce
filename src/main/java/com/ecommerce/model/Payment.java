@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name = "PAYMENT")
-@Table (name = "PAYMENT")
+@Entity (name = "payment")
+@Table (name = "payment")
 public class Payment {
 
     // getters and setters by Lombook

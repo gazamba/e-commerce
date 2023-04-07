@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name = "ORDER_STATUS")
-@Table (name = "ORDER_STATUS")
+@Entity (name = "order_status")
+@Table (name = "order_status")
 public class OrderStatus {
 
     // getters and setters by Lombook
@@ -16,7 +16,7 @@ public class OrderStatus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
 

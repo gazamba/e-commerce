@@ -7,8 +7,8 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity (name = "ORDER")
-@Table (name = "ORDER")
+@Entity (name = "order")
+@Table (name = "order")
 public class Order {
 
     // getters and setters by Lombook
@@ -20,12 +20,12 @@ public class Order {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "USER_ID")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @JsonManagedReference
     @OneToMany
-    @JoinColumn(name = "PRODUCT_ID")
+    @JoinColumn(name = "product_id")
     private List<Product> product;
 
     private int quantity;
@@ -33,7 +33,7 @@ public class Order {
     private float price;
 
     @ManyToOne
-    @JoinColumn(name="ORDER_STATUS_ID")
+    @JoinColumn(name="order_status_id")
     private OrderStatus orderStatus;
 
 

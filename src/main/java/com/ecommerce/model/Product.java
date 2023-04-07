@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name = "PRODUCT")
-@Table (name = "PRODUCT")
+@Entity (name = "product")
+@Table (name = "product")
 public class Product {
 
     // getters and setters by Lombook
@@ -16,20 +16,20 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "DESCRIPTION")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "STOCK")
+    @Column(name = "stock")
     private int stock;
 
-    @Column(name = "PRICE")
+    @Column(name = "price")
     private float price;
 
     @OneToOne
-    @JoinColumn(name = "CATEGORY_ID")
+    @JoinColumn(name = "category_id")
     Category category;
 
 

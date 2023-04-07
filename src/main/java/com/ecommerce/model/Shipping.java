@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity (name = "SHIPPING")
-@Table (name = "SHIPPING")
+@Entity (name = "shipping")
+@Table (name = "shipping")
 public class Shipping {
 
     // getters and setters by Lombook
@@ -17,15 +17,15 @@ public class Shipping {
     private int id;
 
     @OneToOne
-    @JoinColumn (name = "ORDER_ID")
+    @JoinColumn (name = "order_id")
     private Order order;
 
     @OneToOne
-    @JoinColumn (name = "SHIPPING_METHOD_ID")
+    @JoinColumn (name = "shipping_method_id")
     private ShippingMethod shippingMethod;
 
     @OneToOne
-    @JoinColumn (name = "SHIPPING_METHOD_STATUS")
+    @JoinColumn (name = "shipping_method_status")
     private ShippingStatus shippingStatus;
 
 }

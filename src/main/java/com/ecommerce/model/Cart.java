@@ -7,8 +7,8 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity (name = "CART")
-@Table (name = "CART")
+@Entity (name = "cart")
+@Table (name = "cart")
 public class Cart {
 
     // getters and setters by Lombook
@@ -20,7 +20,7 @@ public class Cart {
     private int id;
 
     @OneToOne
-    @JoinColumn(name = "USER_ID")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @JsonManagedReference
