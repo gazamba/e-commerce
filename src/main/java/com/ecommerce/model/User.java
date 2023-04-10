@@ -3,15 +3,11 @@ package com.ecommerce.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
-
+@Getter
+@Setter
 @Entity (name = "user")
-@Table (name = "user")
+@Table (name = "user", schema = "ecommerce")
 public class User {
-
-    // getters and setters by Lombook
-    @Getter
-    @Setter
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,17 +27,5 @@ public class User {
 
     @Column(name = "payment_info")
     private String paymentInfo;
-
-
-    public User() {
-    }
-
-    public User(String username, String email, String password, String address, String paymentInfo) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
-        this.address = address;
-        this.paymentInfo = paymentInfo;
-    }
 
 }

@@ -4,16 +4,13 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.List;
 
+@Getter
+@Setter
 @Entity (name = "order")
 @Table (name = "order")
 public class Order {
-
-    // getters and setters by Lombook
-    @Getter
-    @Setter
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

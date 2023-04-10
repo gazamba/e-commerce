@@ -3,14 +3,12 @@ package com.ecommerce.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
+@Getter
+@Setter
 @Entity (name = "product")
 @Table (name = "product")
 public class Product {
 
-    // getters and setters by Lombook
-    @Getter
-    @Setter
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
