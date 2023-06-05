@@ -1,5 +1,6 @@
 package com.ecommerce.model;
 
+import com.ecommerce.security.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
